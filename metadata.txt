@@ -1,0 +1,24 @@
+[general]
+name=StarShoal
+qgisMinimumVersion=3.28
+description=Satellite-derived bathymetry: download Sentinel-2 and map shallow water depth calibrated with your own depth points.
+version=1.0.0
+author=Daniel Ibarra-Marinas, Ana Mónica de Jhesú García
+email=daniel.ibarra@uat.edu.mx
+about=StarShoal downloads Sentinel-2 imagery from the Copernicus Data Space Ecosystem, prepares masked surface reflectance and estimates shallow-water depth with Stumpf log-ratio, Lyzenga multiband and Random Forest, calibrated and validated on the same points (spatial blocks). Includes Hedley sunglint correction and area masking by polygon. One window with tabs, in Spanish and English; every tool is also in the Processing Toolbox. Outputs depth and trust rasters plus an HTML accuracy report. Optical SDB only works in clear, shallow water.
+tracker=https://github.com/adanielibarra/starshoal/issues
+repository=https://github.com/adanielibarra/starshoal
+hasProcessingProvider=yes
+changelog=1.0.0: first stable release; security clean-up (https-only downloads)
+    0.6.0: import ACOLITE outputs (L2R/L2W NetCDF or exported GeoTIFFs; nearest-wavelength band choice for Sentinel-2A/B/C) in the Prepare tab and as a Processing tool
+    0.5.0: Random Forest per-pixel uncertainty (standard deviation between trees, sd_rf.tif) with its coverage checked on the validation points; co-author name with accent
+    0.4.0: Stumpf optical depth limit (two-segment fit) and blue/red to blue/green switching model; one calibration/validation split for all methods, validated on common and on own points with the depth distribution of each sample; Lyzenga R_inf = mean - k sd; water level per point and vertical datum in the report and raster metadata; tests folder; co-author Ana Mónica de Jhesú García
+    0.3.0: single window with tabs (Home, Download, Prepare, Sunglint, Bathymetry) like EloteSat; own menu and toolbar; Spanish and English; scene table before downloading; results table and styled layers
+    0.2.0: Hedley sunglint correction; Lyzenga (bands selectable, blue+green by default) and Random Forest; report of points lost per method; output as depth or elevation; area polygon masking
+    0.1.0: first version (download, prepare, Stumpf)
+tags=bathymetry,satellite derived bathymetry,SDB,sentinel-2,remote sensing,coastal,ocean
+homepage=https://github.com/adanielibarra/starshoal
+category=Raster
+icon=icon.svg
+experimental=False
+deprecated=False

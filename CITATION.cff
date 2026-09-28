@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use StarShoal, please cite it as below."
+title: "StarShoal: satellite-derived bathymetry plugin for QGIS"
+type: software
+version: 1.0.0
+date-released: 2026-09-28
+license: GPL-2.0-or-later
+repository-code: "https://github.com/adanielibarra/starshoal"
+authors:
+  - family-names: Ibarra-Marinas
+    given-names: Daniel
+    affiliation: "Facultad de Ingeniería y Ciencias, Universidad Autónoma de Tamaulipas"
+    orcid: "https://orcid.org/0000-0003-3683-4456"
+  - family-names: García
+    given-names: Ana Mónica de Jhesú
+    affiliation: "Facultad de Ingeniería y Ciencias, Universidad Autónoma de Tamaulipas"
+    orcid: "https://orcid.org/0000-0001-6613-6945"
+keywords: [satellite-derived bathymetry, Sentinel-2, QGIS, remote sensing, coastal]
